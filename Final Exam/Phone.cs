@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Final_Exam
 {
     public class Phone
     {
+        [Key]
         public string Name { get; set; }
         public double Price { get; set; }
         public string OpSystem{ get; set; }
