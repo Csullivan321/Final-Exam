@@ -12,6 +12,6 @@ namespace Final_Exam
         public int Price { get; set; }
         public string OpSystem{ get; set; }
         public string OsImage{ get; set; }
-        public string  PhoneImage{ get; set; }
+        public string PhoneImage{ get; set; }
     }
 }
