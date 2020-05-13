@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Final_Exam
 {
-    class Phone
+    public class Phone
     {
-
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public string OpSystem{ get; set; }
+        public string OsImage{ get; set; }
+        public string  PhoneImage{ get; set; }
     }
 }
