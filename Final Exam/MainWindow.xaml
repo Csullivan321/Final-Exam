@@ -7,8 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <DataTemplate x:Key="Listboxtemplate">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source="{Binding OsImage}" Width="75"/>
+
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" Margin="5" FontSize="12"/>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <ListBox x:Name="lstbxPhone" HorizontalAlignment="Left" Height="272" Margin="39,94,0,0" VerticalAlignment="Top" Width="208" SelectedValuePath="ShowPrice" SelectionChanged="lstbxPhone_SelectionChanged"/>
+        <ListBox x:Name="lstbxPhone" HorizontalAlignment="Left" Height="272" Margin="39,94,0,0" VerticalAlignment="Top" Width="208" SelectedValuePath="ShowPrice" SelectionChanged="lstbxPhone_SelectionChanged" ItemTemplate="{StaticResource Listboxtemplate}"/>
         <TextBlock x:Name="Pricetxtblk" HorizontalAlignment="Left" Margin="534,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="200" />
         <Image x:Name="Phoneimg" HorizontalAlignment="Left" Height="178" Margin="534,188,0,0" VerticalAlignment="Top" Width="200"/>
 
