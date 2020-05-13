@@ -28,6 +28,8 @@ namespace Final_Exam
     public class PhoneData : DbContext
     {
         public PhoneData() : base("ThePhoneData") { }
+
+        public DbSet<Phone>Phones { get; set; }
     }
 }
 
