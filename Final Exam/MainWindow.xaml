@@ -20,7 +20,7 @@
         </DataTemplate>
     </Window.Resources>
     <Grid>
-        <ListBox x:Name="lstbxPhone" HorizontalAlignment="Left" Height="272" Margin="39,94,0,0" VerticalAlignment="Top" Width="208" SelectedValuePath="ShowPrice" SelectionChanged="lstbxPhone_SelectionChanged" ItemTemplate="{StaticResource Listboxtemplate}"/>
+        <ListBox x:Name="lstbxPhone" HorizontalAlignment="Left" Height="272" Margin="39,94,0,0" VerticalAlignment="Top" Width="208" SelectionChanged="lstbxPhone_SelectionChanged" />
         <TextBlock x:Name="Pricetxtblk" HorizontalAlignment="Left" Margin="534,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="200" />
         <Image x:Name="Phoneimg" HorizontalAlignment="Left" Height="178" Margin="534,188,0,0" VerticalAlignment="Top" Width="200"/>
 

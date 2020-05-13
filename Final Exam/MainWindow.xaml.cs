@@ -33,8 +33,8 @@ namespace Final_Exam
             var query = from a in db.Phones
                         orderby a.Name
                         select a.Name;
-                        
 
+            //var result = query.ToList();
             lstbxPhone.ItemsSource = query.ToList();
         }
 
@@ -44,7 +44,7 @@ namespace Final_Exam
 
             
 
-            // display phone image
+            // display phone price
             Phone selectedphone = lstbxPhone.SelectedItem as Phone;
 
             if(selectedphone != null)

@@ -17,19 +17,19 @@ namespace Final_Exam
         public string OsImage{ get; set; }
         public string PhoneImage{ get; set; }
 
-        //public IncreasePrice()
-        //{
-        //    double AddedPrice = 0.1;
+        public void IncreasePrice()
+        {
+            double AddedPrice = 0.1;
 
-        //    Price = (Price * AddedPrice) + Price;
-        //    return 
-
-        //}
+            Price = (Price * AddedPrice) + Price;
+            
+        }
     }
 
     public class PhoneData : DbContext
     {
-        public PhoneData() : base("ThePhoneData") { }
+
+        public PhoneData() : base("ThePhoneData2") { }
 
         public DbSet<Phone>Phones { get; set; }
     }
